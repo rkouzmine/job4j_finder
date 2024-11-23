@@ -1,0 +1,44 @@
+2024-11-24 00:32:05,475 [INFO] ru.job4j.Finder - The Finder program has started 
+2024-11-24 00:32:05,485 [INFO] ru.job4j.Finder - Arguments successfully validated: [-d=c:\projects, -n=*.?xt, -t=mask, -o=data/result.txt]
+2024-11-24 00:32:05,487 [INFO] ru.job4j.Finder - Determining search type
+2024-11-24 00:32:05,839 [INFO] ru.job4j.Finder - Search in directory c:\projects completed successfully
+2024-11-24 00:32:05,841 [INFO] ru.job4j.Finder - Files found: 157
+2024-11-24 00:32:05,847 [INFO] ru.job4j.Finder - Results successfully written.
+2024-11-24 00:32:05,847 [INFO] ru.job4j.Finder - The Finder program has finished working
+
+2024-11-24 00:32:31,543 [INFO] ru.job4j.Finder - The Finder program has started 
+2024-11-24 00:32:31,557 [INFO] ru.job4j.Finder - Arguments successfully validated: [-d=c:\projects, -n=User.class, -t=name, -o=data/result.txt]
+2024-11-24 00:32:31,558 [INFO] ru.job4j.Finder - Determining search type
+2024-11-24 00:32:31,788 [INFO] ru.job4j.Finder - Search in directory c:\projects completed successfully
+2024-11-24 00:32:31,789 [INFO] ru.job4j.Finder - Files found: 8
+2024-11-24 00:32:31,791 [INFO] ru.job4j.Finder - Results successfully written.
+2024-11-24 00:32:31,792 [INFO] ru.job4j.Finder - The Finder program has finished working
+
+2024-11-24 00:32:58,737 [INFO] ru.job4j.Finder - The Finder program has started 
+2024-11-24 00:32:58,750 [INFO] ru.job4j.Finder - Arguments successfully validated: [-d=c:\projects, -n=.*[Aa]rray.*\.class.*, -t=regex, -o=data/result.txt]
+2024-11-24 00:32:58,751 [INFO] ru.job4j.Finder - Determining search type
+2024-11-24 00:32:59,102 [INFO] ru.job4j.Finder - Search in directory c:\projects completed successfully
+2024-11-24 00:32:59,108 [INFO] ru.job4j.Finder - Files found: 47
+2024-11-24 00:32:59,111 [INFO] ru.job4j.Finder - Results successfully written.
+2024-11-24 00:32:59,111 [INFO] ru.job4j.Finder - The Finder program has finished working
+
+2024-11-24 00:33:30,270 [INFO] ru.job4j.Finder - The Finder program has started 
+2024-11-24 00:33:30,283 [ERROR] ru.job4j.Finder - Error validating arguments: The specified directory 'c:\gg' does not exist
+java.lang.IllegalArgumentException: The specified directory 'c:\gg' does not exist
+	at ru.job4j.Finder.validationArgs(Finder.java:86)
+	at ru.job4j.Finder.main(Finder.java:24)
+2024-11-24 00:33:30,288 [INFO] ru.job4j.Finder - The Finder program has finished working
+
+2024-11-24 00:33:49,060 [INFO] ru.job4j.Finder - The Finder program has started 
+2024-11-24 00:33:49,074 [ERROR] ru.job4j.Finder - Error validating arguments: Invalid search type: user. Available types: name, mask, regex
+java.lang.IllegalArgumentException: Invalid search type: user. Available types: name, mask, regex
+	at ru.job4j.Finder.validationArgs(Finder.java:94)
+	at ru.job4j.Finder.main(Finder.java:24)
+2024-11-24 00:33:49,078 [INFO] ru.job4j.Finder - The Finder program has finished working
+
+2024-11-24 00:34:08,813 [INFO] ru.job4j.Finder - The Finder program has started 
+2024-11-24 00:34:08,828 [ERROR] ru.job4j.Finder - Error validating arguments: Incorrect file format: result.format
+java.lang.IllegalArgumentException: Incorrect file format: result.format
+	at ru.job4j.Finder.validationArgs(Finder.java:99)
+	at ru.job4j.Finder.main(Finder.java:24)
+2024-11-24 00:34:08,833 [INFO] ru.job4j.Finder - The Finder program has finished working
