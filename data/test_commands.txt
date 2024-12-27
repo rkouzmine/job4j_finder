@@ -1,0 +1,21 @@
+Тестовые команды
+
+cd C:\Директория_проекта
+
+Поиск файлов по маске
+java -cp "target\job4j_finder-1.0.jar;libs\*" ru.job4j.Finder -d=c:\projects -n="*.?xt" -t=mask -o="data/result.txt"
+
+Поиск файлов по полному имени
+java -cp "target\job4j_finder-1.0.jar;libs\*" ru.job4j.Finder -d=c:\projects -n="User.class" -t=name -o="data/result.txt"
+
+Поиск файлов по регулярному выражению
+java -cp "target\job4j_finder-1.0.jar;libs\*" ru.job4j.Finder -d=c:\projects -n=".*[Aa]rray.*\.class.*" -t=regex -o="data/result.txt"
+
+Пример с некорректной директорией
+java -cp "target\job4j_finder-1.0.jar;libs\*" ru.job4j.Finder -d=c:\gg -n="*.?xt" -t=mask -o="data/result.txt"
+
+Пример с некорректным типом поиска
+java -cp "target\job4j_finder-1.0.jar;libs\*" ru.job4j.Finder -d=c:\projects -n="User.class" -t=user -o="data/result.txt"
+
+Пример с некорректным форматом выходного файла
+java -cp "target\job4j_finder-1.0.jar;libs\*" ru.job4j.Finder -d=c:\projects -n=".*[Aa]rray.*\.class.*" -t=regex -o="data/result.format"
